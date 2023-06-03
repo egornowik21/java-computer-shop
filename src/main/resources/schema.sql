@@ -17,7 +17,8 @@ create table if not exists hd(
     numbers bigint,
     price bigint,
     count bigint,
-    sizes Integer
+    sizes Integer,
+    item_type VARCHAR(512)
 );
 
 
@@ -28,7 +29,8 @@ create table if not exists laptops(
     numbers bigint,
     price bigint,
     count bigint,
-    sizes integer
+    sizes integer,
+    item_type VARCHAR(512)
 );
 
 create table if not exists monitors(
@@ -38,7 +40,8 @@ create table if not exists monitors(
     numbers bigint,
     price bigint,
     count bigint,
-    sizes integer
+    sizes integer,
+    item_type VARCHAR(512)
 );
 
 create table if not exists pc(
@@ -48,5 +51,6 @@ create table if not exists pc(
     numbers bigint,
     price bigint,
     count bigint,
-    pcForms varchar(512)
+    pcForms varchar(512),
+    item_type VARCHAR(512)
 );

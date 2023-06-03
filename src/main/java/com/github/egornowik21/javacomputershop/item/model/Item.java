@@ -28,4 +28,6 @@ public class Item {
     Long price;
     @Column(name = "count", nullable = false)
     Long count;
+    @Enumerated
+    ItemType itemType;
 }
